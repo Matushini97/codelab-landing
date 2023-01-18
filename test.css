@@ -1,0 +1,22 @@
+.container {
+    float: left;
+
+}
+#one {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block
+}
+#two {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block
+}
+#three {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block
+}

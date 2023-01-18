@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+html {
+    font-family: 'lato';
+    color: #242590;
+    font-size: 10px;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-transform: uppercase;
+    color: white;
+}
+
+/* header and welcome section */
+
+#main-header {
+    background: #242590;
+    width: 100%;
+    height: 10rem;
+    color: #fff;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+
+
+.main-header-logo {
+    display: flex;
+    font-size: 2.5rem;
+
+}
+
+.main-header-logo i {
+    font-size: 4rem;
+    padding-right: .8rem;
+}
+
+.main-header-nav ul {
+    display: flex;
+    padding: .5rem;
+}
+
+.main-header-nav ul li a {
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0 .8rem;
+    color: #fff;
+
+}
+
+.main-header-nav ul li a:hover {
+    color: grey
+}
+
+/* welcome section */
+#welcome-section {
+    width: 100%;
+    height: 70em;
+    color: #fff;
+    background: url('img/pexels-pok-rie-1432675.jpg') no-repeat center center/ cover ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#welcome-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, .65);
+}
+
+#welcome-section * {
+    z-index: 1;
+}
+
+#welcome-section h1 {
+    font-size: 7rem;
+}
+
+#welcome-section p {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+
+#markets {
+    width: 100%;
+
+}
+
+.markets {
+    border: #242590 solid .3rem;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.markets:hover {
+    background: #242590;
+    color: white;
+}
+
+.markets i {
+    font-size: 5rem;
+}
+
+.markets h2 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.markets p {
+    font-size: 2.5rem;
+}
+
+
+/* Team section */
+
+#team {
+    width: 100%;
+
+}
+
+#team img {
+    width: 16rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+
+.team {
+    transition: all .3s ease;
+}
+
+.team:hover {
+    transform: scale(1.1);
+}
+
+.team h2 {
+    font-size: 3rem;
+}
+
+.team p {
+    font-size: 2.5rem;
+}
+
+/* Contact us section */
+
+#contact {
+    width: 100%;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.form-container h2 {
+    font-size: 5rem;
+}
+
+.form-container input {
+    width: 100%;
+    margin: 1rem 0;
+    height: 6rem;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    border: none;
+
+}
+
+.form-container input:focus {
+    border-color: #242590;
+    outline: #242590;
+    box-shadow: 0 0 .4rem #242590;
+}
+
+.form-container textarea {
+    height: 10rem;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    padding: .3rem;
+}
+
+.form-container textarea:focus {
+    border-color: #242590;
+    outline: #242590;
+    box-shadow: 0 0 .4rem #242590;
+}
+
+::placeholder {
+    color: #242590;
+}
+
+#footer {
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.footer-items h4 {
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-items h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    background: white;
+    height: .2rem;
+    width: 5rem;
+}
+
+.footer-items ul li {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-items ul li a {
+    transition: all .3s ease;
+
+}
+
+
+.footer-items ul li a:hover {
+    padding-left: .8rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-items .social-links a {
+    margin: 1rem;
+    background: white;
+    border-radius: 1rem;
+    width: 3rem;
+    color: #242590;
+    padding: .3rem;
+    transition: all .3s ease;
+    font-size: 2.5rem;
+
+}
+
+.footer-items .social-links a:hover {
+    background: #242590;
+    color:#fff;
+}
+
+@media (max-width: 900px) {
+    #main-header {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .clip-1 {
+        clip-path: none;
+    }
+
+    .clip-2 {
+        clip-path: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

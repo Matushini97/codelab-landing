@@ -1,0 +1,134 @@
+/* Background */
+
+.bg-primary {
+    background: #242590;
+
+}
+
+.bg-secondary {
+    background: white;
+
+}
+
+.main-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #242590;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    margin-top: .6rem;
+    font-size: 3rem;
+    position: relative;
+}
+
+.main-btn:hover {
+    top: -1px;
+}
+
+.secondary-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: none;
+    border: #242590 solid .3rem;
+    border-radius: 1rem;
+    color: #242590;
+    margin-top: .6rem;
+    font-size: 3rem;
+    position: relative;
+}
+
+.secondary-btn:hover {
+    top: -1px;
+}
+
+
+/* section title styling */
+
+.section-title {
+    font-size: 7rem;
+    width: 50%;
+    margin: 0 auto 3rem;
+    border-bottom: .3rem solid #242590;
+    text-align: center;
+}
+
+/* clip path*/
+
+.clip-1 {
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.clip-2 {
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/*  Flex container for markets and team */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-container .flex-items {
+    padding: 5rem;
+    margin: 2rem;
+    border-radius: 50%;
+    transition: all .3s ease;
+    flex: 1;
+}
+
+/* flx class for about us and contact */
+
+.flex-container-two {
+    width: 100%;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.row .column {
+    flex: 1;
+    height: 100%;
+}
+
+.row .column img {
+    height: 100%;
+}
+
+.row .column .column-1, .row .column .column-2 {
+    height: 60rem;
+    background: #eee;
+}
+
+.column-2-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2.5rem;
+}
+
+/* About us styling */
+
+#about {
+    width: 100%;
+}
+
+#about .column-2 h2 {
+    font-size: 7rem;
+}
+
+#about .column-2 p {
+    font-size: 4rem;
+    text-align: end;
+}
